@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Pets</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+      <img src="./images/logo-site.png" alt="PetAdopt Logo">
+    </div>
+      <ul class="nav-links">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="index.html" class="btn-logout">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- Filters & Pets Section --> 
+   <section class="pet-list"> 
+    <h2>Search For Your Perfect Pet</h2> 
+    <div class="filters">
+  <input type="text" id="searchName" placeholder="Search by name...">
+
+  <input type="text" id="searchBreed" placeholder="Search by breed..."> 
+
+  <select id="filterSpecies">
+    <option value="">All Species</option>
+    <option value="Dog">Dog</option>
+    <option value="Cat">Cat</option>
+  </select>
+
+  <select id="filterGender">
+    <option value="">All Genders</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+  </select>
+
+  <select id="sortPets">
+        <option value="">Sort By</option>
+        <option value="name-asc">Name ↑</option>
+        <option value="name-desc">Name ↓</option>
+        <option value="age-asc">Age ↑</option>
+        <option value="age-desc">Age ↓</option>
+  </select>
+
+</div>
+
+   </section> 
+         
+  <section class="pets-section">
+    <h2>All Pets</h2>
+    <p>Find your perfect furry friend!</p>
+    <div class="pets-container" id="petsContainer">
+      <!-- Pets will be populated dynamically -->
+    </div>
+  </section>
+
+  <!-- Adoption Form Modal -->
+<div id="adoptionModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <h2>Adoption Request</h2>
+    <form id="adoptionForm">
+      <input type="hidden" id="petId" name="petId">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required>
+
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+
+      <button type="submit" class="btn-primary">Submit Request</button>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- About -->
+    <div class="footer-about">
+      <h3>Adopt Don’t Shop</h3>
+      <p>Helping pets find safe and loving homes.  
+      Adopt a friend, save a life.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Sign Up</a></li>
+        <li><a href="pets.html">Available Pets</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email: info@adoptdontshop.com</p>
+      <p>Phone: +961 76 000 000</p>
+      <p>Lebanon</p>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-socials">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/adoptdontshop.lb/"><img src="./images/facebook.svg" alt="Facebook"></a>
+        <a href="https://www.instagram.com/adoptdontshop.lb/"><img src="./images/instagram.svg" alt="Instagram"></a>
+        <a href="https://www.tiktok.com/@adoptdontshoplb"><img src="./images/tiktok.svg" alt="TikTok"></a>
+        <a href="https://www.youtube.com/@adoptdontshoplb"><img src="./images/youtube.svg" alt="YouTube"></a>
+        <a href="https://x.com/adoptdontshopl"><img src="./images/x.svg" alt="X"></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p><b>© 2025 Adopt Don’t Shop. All rights reserved.</b></p>
+  </div>
+</footer>
+
+  <script src="js/pets.js"></script>
+ 
+</body>
+</html>

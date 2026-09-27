@@ -1,0 +1,8 @@
+# how to run code 
+
+# cd backend    
+# npm start  
+# index -> right-click :open with live server
+
+#login:
+shelter:serenaaouad23@gmail.com ; 
